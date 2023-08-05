@@ -2,7 +2,7 @@
 
 MnConvention is a post-processor for reading the CSV generated from the BitForms containing registration information.  The registration information needs to be parsed to translate escaped characters and specific unicode characters from the array of selected seminars.  Ultimately, this will produce an Excel XLS file that can be read as an Excel Spreadsheet.
 
-MnConvention is licensed under the GNU Affero General Public License, see [License](license.html).
+MnConvention is licensed under the GNU Affero General Public License, see [License](src/site/markdown/license.md).
 
 ## How It Works
 
@@ -110,3 +110,22 @@ descending count sequence.  This means the most popular seminars are listed firs
 * <b>Seminar</b>: The name of the seminar.
 * <b>Count</b>: The aggregate count of registrants with that seminar choice.
 
+## Development 
+
+MNConvention was developed using Maven and Intellij.  The standard development chain is
+to issue the following Maven Life Cycle commands:
+
+    clean
+    compile
+    test
+    package
+    mvn dependency:copy-dependencies
+    site
+    mvn assembly:single
+    
+The <code>install</code> and <code>deploy</code> are set up for loading to my windows laptop file
+system.  I do have a TODO item to generalize this function for others to use.
+
+
+    
+    
