@@ -237,11 +237,15 @@ public class MnConvention implements Runnable {
 
         // Meal Summary
         createHeader(mealCounts, MEAL_HEADINGS, MEAL_WIDTHS, hct);
+        System.out.print("Meals counted: ");
         createSummaryDetail(mealCounts, meals, ni, dct, lj);
+
 
         // Seminar Summary
         createHeader(seminarCounts, SEMINAR_HEADINGS, SEMINAR_WIDTHS, hct);
+        System.out.print("Seminars counted: ");
         createSummaryDetail(seminarCounts, seminars, ni, dct, lj);
+
 
         FileOutputStream out = new FileOutputStream(outputFile);
         workbook.write(out);
@@ -344,6 +348,7 @@ public class MnConvention implements Runnable {
             createCell(r, 15, registration.getCreated(), leftJustified);
             createCell(r, 16, registration.getModified(), leftJustified);
         }
+        System.out.println("Registrations recorded: " + rowNbr);
 
     }
 
@@ -378,6 +383,7 @@ public class MnConvention implements Runnable {
                 createCell(r, 7, registration.getModified(), leftJustified);
             }
         }
+        System.out.println("Seminar Preferences recorded: " + rowNbr);
     }
 
     /**
@@ -440,6 +446,7 @@ public class MnConvention implements Runnable {
                 createCell(r, 1, (Integer) me.getKey(), numberStyle);
             }
         }
+        System.out.println(rowNbr);
     }
 
     /**
