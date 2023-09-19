@@ -1,5 +1,13 @@
 # Release Notes
 
+## 2023.0.1-SNAPSHOT
+
+With the 2023-09-18 csv feed, a new column was discovered called <code>Divider</code>, after <code>Phone</code> and before <code>User</code>.
+Data Inspection showed the values for <code>Divider</code> to be all blank, so the column was ignored.   
+
+
+Class <code>Registration</code> was modified to not read <code>Divider</code>.
+
 ## 2023.0.0-SNAPSHOT
 
 The initial release for the 2023 Minnesota Section Convention.

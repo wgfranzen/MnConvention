@@ -157,13 +157,13 @@ public class Registration {
         streetAddress = record.get(11);
         seminars = parseSeminars(record.get(12));
         phoneNbr = record.get(13);
-        userIdentifier = record.get(14);
-        status = record.get(15);
-        formURL = record.get(16);
-        sourceDevice = record.get(17);
-        ipAddress = record.get(18);
-        created = parseDateTime(record.get(19));
-        modified = parseDateTime(record.get(20));
+        userIdentifier = record.get(15);
+        status = record.get(16);
+        formURL = record.get(17);
+        sourceDevice = record.get(18);
+        ipAddress = record.get(19);
+        created = parseDateTime(record.get(20));
+        modified = parseDateTime(record.get(21));
     }
 
     /**
