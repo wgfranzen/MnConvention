@@ -37,8 +37,8 @@ class RegistrationTest {
     @DetailTest
     @DisplayName("Runs the Registration")
     void run() {
-       String[] runtimeParameters = { "--input", "C:/Users/wgfra/Downloads/bitform 2_9-18-23.csv",
-       "--output", "target/bitform 2_9-18-23.xlsx"};
+       String[] runtimeParameters = { "--input", "C:/Users/wgfra/Downloads/10-1-23 convention-bitform 2.csv",
+       "--output", "target/10-1-23 convention-bitform 2.xlsx"};
        MnConvention.main(runtimeParameters);
     }
 }

@@ -12,4 +12,4 @@ ECHO OFF
 ::  You should have received a copy of the GNU General Public License along with Foobar. If not, see <https://www.gnu.org/licenses/>.
 
 
-java -jar MnConvention-2023.0.0-SNAPSHOT.jar %*
+java -jar MnConvention-2023.0.1-SNAPSHOT.jar %*
